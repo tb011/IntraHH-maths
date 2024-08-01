@@ -15,7 +15,7 @@ This project provides functions for the analysis of gender related differences i
 ## 2. Configuration
 
 #### 2.1. Create a data directory under IntraHH-maths
-Now you should have two folders under the top level directory;
+Now you should have two folders under the top level 'Intra-HH maths' directory;
 - R 
 - data 
 
