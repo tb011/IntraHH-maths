@@ -16,7 +16,7 @@ This project provides functions for the analysis of gender related differences i
 
 ### 2.1 Place all data in the 'data' directory
 
-### 3. Running the script in R/R Studio:
+## 3. Running the script in R/R Studio:
 
 #### 3.1 Set the working directory to the R script location ("R/IntraHHMaths.R")
 #### 3.2 Run the R script ("R/IntraHHMaths.R")
