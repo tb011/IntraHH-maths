@@ -16,8 +16,8 @@ This project provides functions for the analysis of gender related differences i
 
 #### 2.1. Create a data directory under IntraHH-maths
 Now you should have two folders under the top level directory;
-R 
-data 
+- R 
+- data 
 
 #### 2.2. Place your HCES and FCT data in your data directory ("IntraHH-maths/data") 
 
