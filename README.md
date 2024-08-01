@@ -2,7 +2,7 @@
 
 ## Using the package
 
-This project provides functions for the analysis of gender related differences in intra-household food distribution.  
+This project provides functions for the analysis of gender related differences in intra-household food distribution in a Household Consumption Expenditure Survey (HCES).  
 
 ## 1. Installation
 
