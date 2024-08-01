@@ -6,7 +6,7 @@ This project provides functions for the analysis of gender related differences i
 
 ## 1. Installation
 
-### Download the Github repository at: https://github.com/tb011/IntraHH-maths
+### Download the Github repository here at: https://github.com/tb011/IntraHH-maths
 
 #### 1.1 Click 'Code' (Green button) 
 #### 1.2 Click 'Download ZIP'
