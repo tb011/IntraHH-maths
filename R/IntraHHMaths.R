@@ -10,17 +10,17 @@
 #'
 #' @details This model has been simulated on hypothetical data.
 #'
-#' @import srvyr jtools survey dplyr BRINDA
+#' @import #packages
 #'
-#' @return output
+#' @return model
 #'
 #' @export
 
 # Function definitions (as used in main function)
 
 ## Data Ingestion and initial calculations
-# DONE Step 1: Input datasets (HCES & FCT)
-# DONE Step 1: Merge datasets together on food sub-group
+# DONE Step 1a: Input datasets (HCES & FCT)
+# DONE Step 1b: Merge datasets together on food sub-group
 # TODO Step 2a: Select eligible HHs 
 # TODO Step 2b: Calculate AFE/AME
 # TODO Step 2c: Calculate amount of food eaten according to AME/AFE
@@ -58,25 +58,37 @@ calcConsumedfpd <- function(dataset, food_group_adjust) {
   energy_food_group_compensate <- 0 # placeholder (filled in via if else statement)
   energy_remaining_food <- (total_energy - energy_food_group_adjust) 
   energy_breakdown_table <- data.frame(total_energy, 
-                                       energy_food_group_adjust,                                                                       energy_food_group_compensate,
+                                       energy_food_group_adjust,
+                                       energy_food_group_compensate,
                                        energy_remaining_food)
   return(list(dataset = dataset, energy_breakdown_table = energy_breakdown_table))
 }
 
 # Main IntraHHMaths function
-IntraHHMaths <- function(HCES,
-                         FCT,
-                         target_group = "WRA"
-                         food_group_adjust = "Starchy Staples",
-                         food_group_compensate = ,
-                         ...) {
+# IntraHHMaths <- function(HCES,
+#                          FCT,
+#                          target_group 
+#                          food_group_adjust,
+#                          food_group_compensate,
+#                          ...) {
   
-  dataset <- readData(hces = "../data/sample_HCES.csv",
-                      fct = "../data/sample_FCT.csv")
+  food_group_adjust = "Starchy Staples" # for testing purposes
+  
+  dataset <- readData(hces = "../data/HCES.csv",
+                      fct = "../data/FCT.csv")
   
   initial_calculations <- calcConsumedfpd(dataset, food_group_adjust)
+  
   dataset <- initial_calculations$dataset
+  
   energy_breakdown_table <-initial_calculations$energy_breakdown_table
   
-  return(dataset)
-}
+#   return(model)
+# }
+
+# Function call example ;
+# food_group_compensate parameter empty for scenario 1
+# IntraHHMaths <- function(HCES,
+#                          FCT,
+#                          target_group = "WRA"
+#                          food_group_adjust = "Starchy Staples")
