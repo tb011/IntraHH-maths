@@ -4,21 +4,21 @@
 
 This project provides functions for the analysis of gender related differences in intra-household food distribution.  
 
-## Installation
+## 1. Installation
 
-### Download the Github repository 
-https://github.com/tb011/IntraHH-maths
+### Download the Github repository at: https://github.com/tb011/IntraHH-maths
 
-#### Click 'Code' (Green button) 
-#### Click 'Download ZIP'
-#### Extract the zip file
+#### 1.1 Click 'Code' (Green button) 
+#### 1.2 Click 'Download ZIP'
+#### 1.3 Extract the zip file
 
-### Place all the data in the 'data' directory
+## 2. Configuration
 
-### In R/R Studio:
+### 2.1 Place all data in the 'data' directory
 
-#### Set the working directory to the R script location ("R/IntraHHMaths.R")
+### 3. Running the script in R/R Studio:
 
-### Run this script! 
+#### 3.1 Set the working directory to the R script location ("R/IntraHHMaths.R")
+#### 3.2 Run the R script ("R/IntraHHMaths.R")
 
 You should be able to run the beginnings of the model!
