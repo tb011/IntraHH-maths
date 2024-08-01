@@ -14,7 +14,7 @@ This project provides functions for the analysis of gender related differences i
 
 ## 2. Configuration
 
-### 2.1 Place all data in the 'data' directory
+#### 2.1 Place all data in the 'data' directory
 
 ## 3. Running the script in R/R Studio:
 
