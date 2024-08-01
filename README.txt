@@ -1,1 +1,0 @@
-Intra HH math calculations
